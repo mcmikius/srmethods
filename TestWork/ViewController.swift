@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     let dayNumber = 1
     let numberOne = 4
     let numberTwo = 6
-    let someNumber = 5
+    let someNumber = 4
     let howMany = 5
     
 
@@ -91,9 +91,11 @@ class ViewController: UIViewController {
     }
     // 7. Написать метод который принимает число N и показывает сумму первых N нечетных чисел, например oddSum(n:4) = (1 + 3 + 5 + 7) должно вернуть число 16 (1 аргумент + return)
     func sumOfOdd(number: Int) -> Int {
+        var some = 1
         var result = 1
-        for _ in 0...number {
-            result += 3
+        for _ in 1..<number {
+            some = some + 2
+            result += some
         }
 
         return result
